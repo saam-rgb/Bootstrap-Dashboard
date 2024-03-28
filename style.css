@@ -1,6 +1,59 @@
-@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
-.fo {
-  font-family: "Source Code Pro", monospace;
+* {
+  padding: 0;
+  margin: 0;
+}
+.dboard {
+  width: 90%;
+  height: 100vh;
+  text-align: center;
+  .col-2 {
+    justify-content: center;
+  }
+}
+
+.dboard .col-3 {
+  height: 100vh;
+}
+
+.row {
+  display: flex;
+}
+.profile {
+  margin-top: 50px;
+  padding: 0;
+}
+.profile img {
+  height: 60px;
+  width: 60px;
+  border-radius: 100%;
+  margin-bottom: 20px;
+}
+.nav-links {
+  padding: 20px;
+}
+.nav-links .fa {
+  margin-right: 40px;
+  cursor: pointer;
+  padding: 18px 0;
+}
+.nav-links li {
+  list-style: none;
+  text-align: left;
+}
+.nav-links ul li a {
+  text-align: left;
+  color: #3b3c3d;
+  text-decoration: none;
+}
+.nav-links li i {
+  padding-right: 30px;
+  color: #3b3c3d;
+}
+
+/* Right column */
+
+.cards p {
+  padding: 2px;
+  border-radius: 10px;
   background-color: aliceblue;
 }
