@@ -1,14 +1,18 @@
 * {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
+
+  color: #ffffff;
 }
+#dash-body {
+  background: #cee8ff;
+}
+
 .dboard {
-  width: 90%;
+  background: #0f1c2e;
   height: 100vh;
   text-align: center;
-  .col-2 {
-    justify-content: center;
-  }
 }
 
 .dboard .col-3 {
@@ -18,42 +22,121 @@
 .row {
   display: flex;
 }
+
 .profile {
   margin-top: 50px;
-  padding: 0;
 }
 .profile img {
-  height: 60px;
-  width: 60px;
+  width: 70px;
+  height: 70px;
   border-radius: 100%;
   margin-bottom: 20px;
 }
 .nav-links {
-  padding: 20px;
+  display: block;
+  padding: 20px 30px;
+  text-align: left;
 }
-.nav-links .fa {
-  margin-right: 40px;
-  cursor: pointer;
-  padding: 18px 0;
-}
-.nav-links li {
+
+.nav-links ul li {
   list-style: none;
-  text-align: left;
+  cursor: pointer;
+  padding: 15px 10px;
+  align-items: center;
 }
+.nav-links ul li:hover {
+  color: #acc2ef;
+}
+.nav-links ul li span {
+  padding: 5px;
+  background: #374357;
+  border-radius: 7px;
+  margin-right: 15px;
+}
+
 .nav-links ul li a {
-  text-align: left;
-  color: #3b3c3d;
+  text-transform: capitalize;
+  color: #ffffff;
   text-decoration: none;
 }
-.nav-links li i {
-  padding-right: 30px;
-  color: #3b3c3d;
+
+.btn {
+  padding: 10px 20px;
+}
+.btn span {
+  padding: 5px;
+  margin-right: 15px;
+}
+
+.btn a {
+  text-decoration: none;
+  color: #ffffff;
 }
 
 /* Right column */
 
-.cards p {
-  padding: 2px;
+.det-row {
+  display: flex;
+  flex-basis: 48%;
+}
+
+.info p:first-child {
+  max-width: fit-content;
+  padding: 2px 10px;
   border-radius: 10px;
-  background-color: aliceblue;
+  background-color: #374357;
+  margin-top: 30px;
+}
+.details-col {
+  text-align: left;
+}
+.tot {
+  background: #acc2ef;
+
+  padding: 20px;
+}
+.tot .tot small {
+  font-size: 14px;
+}
+.income {
+  background-color: #374357;
+}
+.user {
+  display: flex;
+  align-items: center;
+}
+.user span {
+  min-height: 50px;
+  min-width: 50px;
+  padding: 5px;
+  background: #cee8ff;
+  border-radius: 7px;
+  margin-right: 15px;
+  color: #0f1c2e;
+  justify-self: center;
+  align-self: center;
+}
+.u-info h5 {
+  font-size: 16px;
+}
+.u-info p {
+  font-size: 14px;
+}
+.user p {
+  float: right;
+  font-size: 16px;
+}
+.graph img {
+  width: 100%;
+}
+.stats {
+  display: flex;
+  justify-content: space-between;
+  background: #374357;
+}
+.s-content {
+  display: flex;
+}
+.s-content span {
+  margin-left: 20px;
 }
